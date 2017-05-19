@@ -47,13 +47,13 @@
   }
 }
 
-label[for="keyword"] {
+label[for="software-creator"] {
   @include h3();
   font-family: $font-serif;
   margin-top: 0;
 }
 
-label[for="location"] {
+label[for="product-title"] {
   @include h5();
   font-family: $font-serif;
 }
@@ -146,10 +146,6 @@ select[id="age-group"] {
   position: relative;
   top: -40px;
 
-}
-
-input[id="location"] {
-  padding-left: 30px;
 }
 
 // Info callouts ------------ //
