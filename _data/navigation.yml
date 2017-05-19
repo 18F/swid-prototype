@@ -1,14 +1,8 @@
 primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
-    links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
+  - text: Request new tag
+    href: /request-new-tag/
+  - text: Sign in
+    href: /sign-in/
 
 footer:
   - text: Documentation

@@ -8,6 +8,7 @@
 primary:
   # this is a key into _data/navigation.yml
   links: primary
+type: basic
 
 secondary:
   # this is a key into _data/navigation.yml
