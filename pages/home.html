@@ -34,7 +34,15 @@ permalink: /
         <form class="form-search" action="">
           <label for="software-creator">Search by software creator</label>
           <span class="usa-form-hint">For example: Microsoft, Oracle, or SAP</span>
-          <input id="software-creator" name="input-type-text" type="text">
+          <input id="software-creator" name="input-type-text" list="software-creator-list">
+          <datalist id="software-creator-list">
+            <option value="Adobe Systems Incorporated">
+            <option value="Microsoft">
+            <option value="Oracle">
+            <option value="SAP">
+            <option value="IBM">
+            <option value="CISCO">
+          </datalist>
           <label for="product-title">Product title</label>
           <span class="usa-form-hint">For example: Microsoft Office</span>
           <input id="product-title" name="input-type-text" type="text">
