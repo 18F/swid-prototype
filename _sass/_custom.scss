@@ -215,9 +215,9 @@ select[id="age-group"] {
   font-weight: $font-normal;
 }
 
-.page-request-status {
+table {
   .fa {
-    margin-right: 4px;
+    margin-right: 2px;
     vertical-align: bottom;
   }
 }
@@ -230,4 +230,12 @@ select[id="age-group"] {
   .fa-circle {
     color: $color-gold;
   }
+}
+
+.th-product-title {
+  width: 14%;
+}
+
+.th-status {
+  width: 14%;
 }
