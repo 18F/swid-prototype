@@ -220,8 +220,14 @@ select[id="age-group"] {
     margin-right: 4px;
     vertical-align: bottom;
   }
+}
 
-  .fa-check-circle {
-    color: $color-green;
+.fa-check-circle {
+  color: $color-green;
+}
+
+.page-requests {
+  .fa-circle {
+    color: $color-gold;
   }
 }

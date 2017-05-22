@@ -1,5 +1,7 @@
 primary:
-  - text: Request new tag
+  - text: Requests
+    href: /requests/
+  - text: New tag request
     href: /request-new-tag/
   - text: Sign in
     href: /sign-in/
