@@ -16,15 +16,20 @@ permalink: /request-new-tag/
 </ol>
 
 <form action="">
-  <label for="input-product-title">Product title</label>
+  <label class="usa-input-required" for="input-product-title">Product title</label>
   <input id="input-product-title" name="input-type-text" type="text">
   <label for="input-product-version">Product version</label>
   <input id="input-product-version" name="input-type-text" type="text">
-  <label for="input-software-creator">Software creator</label>
+  <label class="usa-input-required" for="input-software-creator">Software creator</label>
   <input id="input-software-creator" name="input-type-text" type="text">
-  <label for="input-software-licensor">Software licensor</label>
+  <label for="input-url">Product URL</label>
+  <input id="input-url" name="input-type-text" type="text">
+  <label for="input-url">Email address</label>
+  <span class="usa-form-hint">To receive updates about SWID tag creation</span>
+  <input id="input-url" name="input-type-text" type="text">
+<!--   <label for="input-software-licensor">Software licensor</label>
   <input id="input-software-licensor" name="input-type-text" type="text">
   <label for="input-software-id">Software ID</label>
-  <input id="input-software-id" name="input-type-text" type="text">
+  <input id="input-software-id" name="input-type-text" type="text"> -->
   <a class="usa-button usa-button-submit" href="{{ site.baseurl }}/requests/">Submit</a>
 </form>
