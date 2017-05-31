@@ -155,6 +155,20 @@ select[id="age-group"] {
 
 }
 
+.fa-question-circle-o {
+  &:before {
+    font-size: 15px;
+  }
+}
+
+.search-results {
+  table th,
+  table td {
+    @include padding(null 1rem);
+  }
+}
+
+
 // Info callouts ------------ //
 
 .info-callouts {
@@ -213,7 +227,7 @@ select[id="age-group"] {
   font-weight: $font-normal;
 }
 
-table {
+td {
   .fa {
     margin-right: 2px;
     vertical-align: bottom;

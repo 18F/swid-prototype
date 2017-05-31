@@ -1,8 +1,6 @@
 primary:
   - text: New tag request
-    href: /request-new-tag/
-  - text: Sign in
-    href: /sign-in/
+    href: /request-new-tag-start/
 
 footer:
   - text: Documentation
