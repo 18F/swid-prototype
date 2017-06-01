@@ -1,5 +1,5 @@
 primary:
-  - text: New tag request
+  - text: + New tag request
     href: /request-new-tag-start/
 
 footer:
