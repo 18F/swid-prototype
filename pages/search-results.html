@@ -9,7 +9,7 @@ class: search-results
 <table class="usa-table-borderless">
   <thead>
     <tr>
-      <th scope="col">
+      <th class="col-product_title" scope="col">
         Product title
         <a href="#0" title="Help text about this field">
           <i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -51,6 +51,12 @@ class: search-results
           <i class="fa fa-info-circle" aria-hidden="true"></i>
         </a>
       </th>
+      <th class="search_results-col-status" scope="col">
+        Status
+        <a href="#0" title="Help text about this field">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </a>
+      </th>
     </tr>
   </thead>
   <tbody>
@@ -62,9 +68,14 @@ class: search-results
       <td>AcrobatPro-AS1-Win-GM-MUL</td>
       <td>Adobe Systems Incorporated</td>
       <td>
-        <a href="{{ site.baseurl }}/assets/swid-tag/regid.1986-12.com.adobe_AcrobatPro-AS1-Win-GM-MUL.swidtag">
+        <span class="disabled">
           <i class="fa fa-download" aria-hidden="true"></i>
-        </a>
+        </span>
+      </td>
+      <td class="tag-status tag-status-in_progress">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        In progress
+        <a href="{{ site.baseurl }}/request-status-simple/">View details</a>
       </td>
     </tr>
     <tr>
@@ -79,6 +90,10 @@ class: search-results
           <i class="fa fa-download" aria-hidden="true"></i>
         </a>
       </td>
+      <td class="tag-status tag-status-complete">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        Complete
+      </td>
     </tr>
     <tr>
       <th scope="row">Acrobat X Pro</th>
@@ -92,6 +107,10 @@ class: search-results
           <i class="fa fa-download" aria-hidden="true"></i>
         </a>
       </td>
+      <td class="tag-status tag-status-complete">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        Complete
+      </td>
     </tr>
     <tr>
       <th scope="row">Acrobat X Pro</th>
@@ -104,6 +123,10 @@ class: search-results
         <a href="{{ site.baseurl }}/assets/swid-tag/regid.1986-12.com.adobe_AcrobatPro-AS1-Win-GM-MUL.swidtag">
           <i class="fa fa-download" aria-hidden="true"></i>
         </a>
+      </td>
+      <td class="tag-status tag-status-complete">
+        <i class="fa fa-circle" aria-hidden="true"></i>
+        Complete
       </td>
     </tr>
   </tbody>

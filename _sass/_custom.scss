@@ -4,6 +4,13 @@
   @include h5;
 }
 
+main {
+  a:visited {
+    color: $color-primary;
+  }
+}
+
+
 // Navigation ------------ //
 
 .usa-logo-text {
@@ -144,7 +151,7 @@ select[id="age-group"] {
 
 .fa {
   &:before {
-    font-size: 20px;
+    // font-size: 20px;
   }
 }
 
@@ -230,7 +237,7 @@ select[id="age-group"] {
 td {
   .fa {
     margin-right: 2px;
-    vertical-align: bottom;
+    vertical-align: inherit;
   }
 }
 
@@ -255,5 +262,71 @@ td {
 .page-request-new-tag-start {
   .fa-chevron-right {
     margin-left: 5px;
+  }
+}
+
+.search_results-col-status {
+  width: 11%;
+}
+
+.tag-status {
+  font-size: 13px;
+  font-weight: $font-bold;
+
+  .fa {
+    font-size: 13px;
+  }
+}
+
+.tag-status-in_progress {
+  .fa {
+    color: $color-gold;
+  }
+}
+
+.tag-status-complete {
+  color: $color-green;
+}
+
+.disabled {
+  color: $color-gray-light;
+  cursor: not-allowed;
+}
+
+table {
+  font-size: 15px;
+}
+
+.col-product_title {
+  width: 15%;
+}
+
+.status-incomplete {
+  color: $color-gray-lighter;
+}
+
+.usa-media_block-body {
+  display: block;
+}
+
+.status-list {
+  i {
+    font-size: 21px;
+    margin-top: 4px;
+  }
+}
+
+.page-request-status-simple {
+  .software-heading {
+    margin-top: 6px;
+  }
+}
+
+.link-subscribe {
+  font-weight: $font-bold;
+  text-decoration: none;
+
+  i {
+    margin-right: 4px;
   }
 }
