@@ -44,20 +44,27 @@ permalink: /
             <option value="IBM">
             <option value="CISCO">
           </datalist>
-          <label for="product-title"><b>Product title</b></label>
-          <span class="usa-form-hint">For example: Microsoft Office</span>
-          <input id="product-title" name="input-type-text" list="product-title-list">
-          <datalist id="product-title-list">
-            <option value="Adobe Acrobat DC Pro">
-            <option value="Adobe Acrobat DC Standard">
-            <option value="Adobe Acrobat XI Pro">
-            <option value="Adobe Acrobat XI Standard">
-            <option value="Adobe Acrobat X Pro">
-            <option value="Adobe Acrobat X Standard">
-          </datalist>
-          <label for="version-number"><b>Version number</b></label>
-          <span class="usa-form-hint">For example: 11.0</span>
-          <input id="version-number" name="input-type-text">
+
+          <div class="usa-input-grid usa-input-grid-medium">
+            <label for="product-title"><b>Product title</b></label>
+            <span class="usa-form-hint">For example: Microsoft Office</span>
+            <input id="product-title" name="input-type-text" list="product-title-list">
+            <datalist id="product-title-list">
+              <option value="Adobe Acrobat DC Pro">
+              <option value="Adobe Acrobat DC Standard">
+              <option value="Adobe Acrobat XI Pro">
+              <option value="Adobe Acrobat XI Standard">
+              <option value="Adobe Acrobat X Pro">
+              <option value="Adobe Acrobat X Standard">
+            </datalist>
+          </div>
+
+          <div class="usa-input-grid usa-input-grid-small">
+            <label for="version-number"><b>Version number</b></label>
+            <span class="usa-form-hint">For example: 11.0</span>
+            <input id="version-number" name="input-type-text">
+          </div>
+
           <a class="usa-button usa-button-submit" href="{{ site.baseurl }}/search-results/">Submit</a>
           <!-- <a href="#">+ Advanced search</a> -->
         </form>

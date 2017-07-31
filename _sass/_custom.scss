@@ -118,6 +118,22 @@ label[for="software-creator"] {
     color: #6e6e6e;
     font-size: 14px;
   }
+
+  .usa-input-grid-medium {
+    @include media($medium-screen) {
+      width: 70%;
+    }
+  }
+
+  .usa-input-grid-small {
+    @include media($medium-screen) {
+      width: 30%;
+    }
+  }
+
+  .usa-button-submit {
+    margin-top: 0;
+  }
 }
 
 .usa-button-submit {
