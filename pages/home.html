@@ -6,8 +6,8 @@ permalink: /
 <main id="main-content">
   <section class="usa-section hero">
     <div class="usa-grid">
-      <h2>Software Identification (SWID) Tags</h2>
-      <p class="usa-font-lead">Software Identification (SWID) Tags help your agency limit software expenditures and maintain cybersecurity by giving you a complete picture of what software you have, where it’s installed, how it got there, and how it’s being used.</p>
+      <h2 class="hero-heading">Software Identification (SWID) Tags</h2>
+      <p class="hero-body usa-font-lead">Software Identification (SWID) Tags help your agency limit software expenditures and maintain cybersecurity by giving you a complete picture of what software you have, where it’s installed, how it got there, and how it’s being used.</p>
     </div>
   </section>
 <!--   <section class="usa-section usa-color-bg-gray-lightest">
@@ -26,13 +26,14 @@ permalink: /
   </section> -->
   <section class="usa-section">
     <div class="usa-grid">
+      <h2 class="home-form-title">Search for a SWID tag</h2>
 <!--       <div class="usa-width-one-half trial-info">
         <h2>Search for a SWID Tag</h2>
         <p>Some helpful text.</p>
       </div> -->
-      <div class="">
+      <div class="usa-width-seven-twelfths">
         <form class="form-search" action="">
-          <label for="software-creator">Search by software creator</label>
+          <label for="software-creator"><b>Software creator</b></label>
           <span class="usa-form-hint">For example: Microsoft, Oracle, or SAP</span>
           <input id="software-creator" name="input-type-text" list="software-creator-list">
           <datalist id="software-creator-list">
@@ -43,7 +44,7 @@ permalink: /
             <option value="IBM">
             <option value="CISCO">
           </datalist>
-          <label for="product-title">Product title</label>
+          <label for="product-title"><b>Product title</b></label>
           <span class="usa-form-hint">For example: Microsoft Office</span>
           <input id="product-title" name="input-type-text" list="product-title-list">
           <datalist id="product-title-list">
@@ -54,12 +55,15 @@ permalink: /
             <option value="Adobe Acrobat X Pro">
             <option value="Adobe Acrobat X Standard">
           </datalist>
-          <label for="version-number">Version number</label>
-          <span class="usa-form-hint">For example: 123456</span>
+          <label for="version-number"><b>Version number</b></label>
+          <span class="usa-form-hint">For example: 11.0</span>
           <input id="version-number" name="input-type-text">
           <a class="usa-button usa-button-submit" href="{{ site.baseurl }}/search-results/">Submit</a>
           <!-- <a href="#">+ Advanced search</a> -->
         </form>
+        <p>
+          <a class="home-link-browse" href="#0"><i class="fa fa-book" aria-hidden="true"></i>Browse by software creator</a>
+        </p>
       </div>
     </div>
   </section>

@@ -10,12 +10,21 @@ main {
   }
 }
 
+.usa-content {
+  p:not(.usa-font-lead) {
+    max-width: 66ch;
+  }
+}
 
 // Navigation ------------ //
 
 .usa-logo-text {
   @include media($nav-width) {
     font-size: 3.2rem;
+  }
+
+  i {
+    color: $color-primary-darker;
   }
 }
 
@@ -34,8 +43,14 @@ main {
 .usa-header-basic {
   .usa-navbar {
     @include media($nav-width) {
-      width: 330px;
+      width: 380px;
     }
+  }
+}
+
+.usa-nav-link {
+  i {
+    font-size: 13px;
   }
 }
 // Hero ------------ //
@@ -43,14 +58,15 @@ main {
 .hero {
   background-color: $color-primary-darker;
   color: $color-white;
+}
 
-  h2 {
-    max-width: 750px;
-  }
+.hero-heading {
+  font-size: 27px;
+}
 
-  h3 {
-    font-weight: $font-normal;
-  }
+.hero-body {
+  // font-family: $font-sans;
+  font-size: 18px;
 }
 
 // Search ------------ //
@@ -62,17 +78,26 @@ main {
 }
 
 label[for="software-creator"] {
-  @include h3();
-  font-family: $font-serif;
+  // @include h3();
+  // font-family: $font-serif;
   margin-top: 0;
 }
 
-label[for="product-title"] {
-  @include h5();
-  font-family: $font-serif;
+// label[for="product-title"] {
+//   @include h5();
+//   font-family: $font-serif;
+// }
+
+.home-form-title {
+  font-size: 20px;
 }
 
 .form-search {
+  background-color: $color-gray-lightest;
+  border: 1px solid #E4E2E0;
+  max-width: 502px;
+  padding: 2rem;
+
   > input[type="text"] {
     @include margin(8px null);
   }
@@ -87,6 +112,11 @@ label[for="product-title"] {
 
   .form-help-text {
     margin-top: 0;
+  }
+
+  .usa-form-hint {
+    color: #6e6e6e;
+    font-size: 14px;
   }
 }
 
@@ -175,6 +205,12 @@ select[id="age-group"] {
   }
 }
 
+.home-link-browse {
+  i {
+    color: $color-base;
+    margin-right: 10px;
+  }
+}
 
 // Info callouts ------------ //
 
@@ -310,10 +346,36 @@ table {
 }
 
 .status-list {
+  position: relative;
+
+  &:before {
+    width: 2px;
+    content: "";
+    position: absolute;
+    height: 300px;
+    background: $color-gray-light;
+    margin: auto;
+    left: 8px;
+    top: 10px;
+    display: block;
+    z-index: -1;
+  }
+
+  > li {
+    margin-bottom: 0.5em;
+  }
+
   i {
+    background: $color-white;
+    border-radius: 100%;
     font-size: 21px;
     margin-top: 4px;
   }
+}
+
+.status-list-step {
+  display: block;
+  font-weight: $font-bold;
 }
 
 .page-request-status-simple {
@@ -329,4 +391,46 @@ table {
   i {
     margin-right: 4px;
   }
+}
+
+.status-sidebar {
+  background-color: #ecf8fb;
+  border-top: 5px solid #205493;
+  padding: 2rem;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.status-sidebar-heading {
+  font-family: $font-sans;
+  font-size: $base-font-size;
+}
+
+.status-date {
+  color: #71747B;
+  display: block;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.steps {
+  position: relative;
+  padding: 20px;
+  max-width: 580px;
+  position: relative;
+  border: 1px solid rgba(174, 176, 181, .29);
+}
+
+.steps:after {
+  background: rgba(249, 249, 249, 0.68);
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -2;
 }

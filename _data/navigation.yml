@@ -1,5 +1,5 @@
 primary:
-  - text: + New tag request
+  - text: <i class="fa fa-plus" aria-hidden="true"></i> New tag request
     href: /request-new-tag-start/
 
 footer:
