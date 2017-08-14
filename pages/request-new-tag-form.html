@@ -8,20 +8,24 @@ permalink: /request-new-tag-form/
 <h2>What product do you need a tag for?</h2>
 
 <form action="">
-  <label for="input-product-title">Product title</label>
-  <input id="input-product-title" name="input-type-text" type="text">
+  <label for="input-product-title usa-input-required">Product title</label>
+  <input id="input-product-title" name="input-type-text" type="text" required="" aria-required="true">
   <label for="input-product-version">Product version (Optional)</label>
   <input id="input-product-version" name="input-type-text" type="text">
-  <label for="input-software-creator">Software creator</label>
-  <input id="input-software-creator" name="input-type-text" type="text">
+  <label for="input-software-creator usa-input-required">Software creator</label>
+  <input id="input-software-creator" name="input-type-text" type="text" required="" aria-required="true">
+  <label for="input-software-licensor">Software licensor (Optional)</label>
+  <span class="usa-form-hint">In the rare case the vendor wrote the software, but another vendor licensed (or sold) it to you.</span>
+  <input id="input-software-licensor" name="input-type-text" type="text">
   <label for="input-url">Product URL (Optional)</label>
   <input id="input-url" name="input-type-text" type="text">
-  <label for="input-url">Email address</label>
+  <label for="input-url" usa-input-required>Email address</label>
   <span class="usa-form-hint">To be notified when your SWID tag is created</span>
-  <input id="input-url" name="input-type-text" type="text">
-<!--   <label for="input-software-licensor">Software licensor</label>
-  <input id="input-software-licensor" name="input-type-text" type="text">
-  <label for="input-software-id">Software ID</label>
+  <input id="input-url" name="input-type-text" type="text" required="" aria-required="true">
+  <label for="input-notes">Notes or comments (Optional)</label>
+  <textarea id="input-notes" name="input-type-textarea"></textarea>
+
+<!--   <label for="input-software-id">Software ID</label>
   <input id="input-software-id" name="input-type-text" type="text"> -->
   <a class="usa-button usa-button-submit" href="{{ site.baseurl }}/request-submitted/">Submit</a>
 </form>
